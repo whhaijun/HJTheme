@@ -1,0 +1,51 @@
+{
+    "global":{
+        "image":"https://img02.mockplus.cn/idoc/2020-09-07/f267b100-f0da-11ea-a90d-8b2bc9fb1bbb.332EC7EA-E7E5-4A61-B596-A1F956AF6326.png",
+        "mainText":"333333",
+        "secondText":"666666",
+        "detailText":"999999",
+        "stockRise":"EF2323",
+        "stockFall":"17A129",
+        "stockSame":"E12121",
+        "stockRiseGradient":["33EF2323","1AFFFFFF"],
+        "stockFallGradient":["330BA12D","1AFFFFFF"],
+        "stockSameGradient":["00FFFFFF","00FFFFFF"],
+        "linkText":"BC935C",
+        "mainButtonBackground":"E12121",
+        "secondButtonBorder":"f5f5f5",
+        "separateLine":"EEEEEE",
+        "background":"FFFFFF",
+        "secondBackground":"FFFFFF",
+        "red":"D11909"
+    },
+    "selfStock":{
+        
+        "shadowImgViewGradientBackground":["99F0F0F0","66FFFFFF"],
+        "clouldSyncSwitchViewBackground":"f8f8f8",
+        "marqueeOptionalEventViewBackground":"FFFFFF",
+        "bottomBar":"F9F9F9",
+        "selfSelectGroupDropContentView":{
+            "gridButtonBackground":"F6F6F6",
+            "gridButtonBackgroundSelected":"0FE12121",
+            "gridButtonTextSelected":"EF4034",
+            "gridButtonText":"333333"
+
+        },
+        "selfIndexSelect": {
+            "cellBackground":"F6F6F6",
+            "cellTextSelected":"B9B9B9",
+            "cellText":"333333",
+        }
+    },
+    "system":{
+        "black":"000000",
+        "white":"FFFFFF",
+        "red":"FF0000",
+        "gray":"BEBEBE",
+        "green":"00FF00",
+        "blue":"0000FF",
+        "yellow":"FFFF00",
+        "orange":"FFA500",
+        "clear":"00FFFFFF"
+    }
+}

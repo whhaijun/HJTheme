@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840CBBE1259ABAF300B4597E /* UIColor+HJFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CBBD3259ABAF300B4597E /* UIColor+HJFactory.m */; };
+		840CBBE2259ABAF300B4597E /* UIView+HJThemeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CBBD7259ABAF300B4597E /* UIView+HJThemeView.m */; };
+		840CBBE3259ABAF300B4597E /* NSObject+HJThemeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CBBDA259ABAF300B4597E /* NSObject+HJThemeObject.m */; };
+		840CBBE4259ABAF300B4597E /* HJDeallocBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CBBDD259ABAF300B4597E /* HJDeallocBlockExecutor.m */; };
+		840CBBE5259ABAF300B4597E /* NSObject+DeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CBBE0259ABAF300B4597E /* NSObject+DeallocBlock.m */; };
+		840CBBE8259ABB3400B4597E /* HJThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CBBE6259ABB3400B4597E /* HJThemeManager.m */; };
+		840CBBEE259ABB5100B4597E /* Yellow.json in Resources */ = {isa = PBXBuildFile; fileRef = 840CBBEB259ABB5100B4597E /* Yellow.json */; };
+		840CBBEF259ABB5100B4597E /* Light.json in Resources */ = {isa = PBXBuildFile; fileRef = 840CBBEC259ABB5100B4597E /* Light.json */; };
+		840CBBF0259ABB5100B4597E /* Dark.json in Resources */ = {isa = PBXBuildFile; fileRef = 840CBBED259ABB5100B4597E /* Dark.json */; };
+		840CBBF4259ACE0800B4597E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CBBF3259ACE0800B4597E /* FirstViewController.m */; };
+		84656A11259AFABA001113D2 /* UIViewController+HJTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 84656A10259AFABA001113D2 /* UIViewController+HJTheme.m */; };
+		84DBFB9525907CBE00C6245E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DBFB9425907CBE00C6245E /* AppDelegate.m */; };
+		84DBFB9825907CBE00C6245E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DBFB9725907CBE00C6245E /* SceneDelegate.m */; };
+		84DBFB9B25907CBE00C6245E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DBFB9A25907CBE00C6245E /* ViewController.m */; };
+		84DBFB9E25907CBE00C6245E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DBFB9C25907CBE00C6245E /* Main.storyboard */; };
+		84DBFBA025907CBF00C6245E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DBFB9F25907CBF00C6245E /* Assets.xcassets */; };
+		84DBFBA325907CBF00C6245E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DBFBA125907CBF00C6245E /* LaunchScreen.storyboard */; };
+		84DBFBA625907CBF00C6245E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DBFBA525907CBF00C6245E /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		840CBBD3259ABAF300B4597E /* UIColor+HJFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HJFactory.m"; sourceTree = "<group>"; };
+		840CBBD4259ABAF300B4597E /* UIColor+HJFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HJFactory.h"; sourceTree = "<group>"; };
+		840CBBD5259ABAF300B4597E /* HJColorKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJColorKey.h; sourceTree = "<group>"; };
+		840CBBD7259ABAF300B4597E /* UIView+HJThemeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HJThemeView.m"; sourceTree = "<group>"; };
+		840CBBD8259ABAF300B4597E /* NSObject+HJThemeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HJThemeObject.h"; sourceTree = "<group>"; };
+		840CBBD9259ABAF300B4597E /* UIView+HJThemeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HJThemeView.h"; sourceTree = "<group>"; };
+		840CBBDA259ABAF300B4597E /* NSObject+HJThemeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HJThemeObject.m"; sourceTree = "<group>"; };
+		840CBBDB259ABAF300B4597E /* HJImageKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJImageKey.h; sourceTree = "<group>"; };
+		840CBBDD259ABAF300B4597E /* HJDeallocBlockExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDeallocBlockExecutor.m; sourceTree = "<group>"; };
+		840CBBDE259ABAF300B4597E /* NSObject+DeallocBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DeallocBlock.h"; sourceTree = "<group>"; };
+		840CBBDF259ABAF300B4597E /* HJDeallocBlockExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDeallocBlockExecutor.h; sourceTree = "<group>"; };
+		840CBBE0259ABAF300B4597E /* NSObject+DeallocBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DeallocBlock.m"; sourceTree = "<group>"; };
+		840CBBE6259ABB3400B4597E /* HJThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJThemeManager.m; sourceTree = "<group>"; };
+		840CBBE7259ABB3400B4597E /* HJThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJThemeManager.h; sourceTree = "<group>"; };
+		840CBBEB259ABB5100B4597E /* Yellow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Yellow.json; sourceTree = "<group>"; };
+		840CBBEC259ABB5100B4597E /* Light.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Light.json; sourceTree = "<group>"; };
+		840CBBED259ABB5100B4597E /* Dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dark.json; sourceTree = "<group>"; };
+		840CBBF2259ACE0800B4597E /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		840CBBF3259ACE0800B4597E /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		84656A0F259AFABA001113D2 /* UIViewController+HJTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HJTheme.h"; sourceTree = "<group>"; };
+		84656A10259AFABA001113D2 /* UIViewController+HJTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HJTheme.m"; sourceTree = "<group>"; };
+		84DBFB9025907CBE00C6245E /* ThemeChage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThemeChage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DBFB9325907CBE00C6245E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84DBFB9425907CBE00C6245E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84DBFB9625907CBE00C6245E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		84DBFB9725907CBE00C6245E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		84DBFB9925907CBE00C6245E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84DBFB9A25907CBE00C6245E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84DBFB9D25907CBE00C6245E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84DBFB9F25907CBF00C6245E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84DBFBA225907CBF00C6245E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84DBFBA425907CBF00C6245E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DBFBA525907CBF00C6245E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84DBFB8D25907CBE00C6245E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840CBBD1259ABAF300B4597E /* ThemeManager */ = {
+			isa = PBXGroup;
+			children = (
+				840CBBD5259ABAF300B4597E /* HJColorKey.h */,
+				840CBBDB259ABAF300B4597E /* HJImageKey.h */,
+				840CBBE7259ABB3400B4597E /* HJThemeManager.h */,
+				840CBBE6259ABB3400B4597E /* HJThemeManager.m */,
+				840CBBDC259ABAF300B4597E /* DeallocBlockExecutor */,
+				840CBBD6259ABAF300B4597E /* ThemeCategories */,
+				840CBBD2259ABAF300B4597E /* UIColor */,
+			);
+			path = ThemeManager;
+			sourceTree = "<group>";
+		};
+		840CBBD2259ABAF300B4597E /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				840CBBD4259ABAF300B4597E /* UIColor+HJFactory.h */,
+				840CBBD3259ABAF300B4597E /* UIColor+HJFactory.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		840CBBD6259ABAF300B4597E /* ThemeCategories */ = {
+			isa = PBXGroup;
+			children = (
+				84656A0F259AFABA001113D2 /* UIViewController+HJTheme.h */,
+				84656A10259AFABA001113D2 /* UIViewController+HJTheme.m */,
+				840CBBD8259ABAF300B4597E /* NSObject+HJThemeObject.h */,
+				840CBBDA259ABAF300B4597E /* NSObject+HJThemeObject.m */,
+				840CBBD9259ABAF300B4597E /* UIView+HJThemeView.h */,
+				840CBBD7259ABAF300B4597E /* UIView+HJThemeView.m */,
+			);
+			path = ThemeCategories;
+			sourceTree = "<group>";
+		};
+		840CBBDC259ABAF300B4597E /* DeallocBlockExecutor */ = {
+			isa = PBXGroup;
+			children = (
+				840CBBDF259ABAF300B4597E /* HJDeallocBlockExecutor.h */,
+				840CBBDD259ABAF300B4597E /* HJDeallocBlockExecutor.m */,
+				840CBBDE259ABAF300B4597E /* NSObject+DeallocBlock.h */,
+				840CBBE0259ABAF300B4597E /* NSObject+DeallocBlock.m */,
+			);
+			path = DeallocBlockExecutor;
+			sourceTree = "<group>";
+		};
+		840CBBEA259ABB5100B4597E /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				840CBBEB259ABB5100B4597E /* Yellow.json */,
+				840CBBEC259ABB5100B4597E /* Light.json */,
+				840CBBED259ABB5100B4597E /* Dark.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		84DBFB8725907CBE00C6245E = {
+			isa = PBXGroup;
+			children = (
+				840CBBD1259ABAF300B4597E /* ThemeManager */,
+				84DBFB9225907CBE00C6245E /* ThemeChage */,
+				84DBFB9125907CBE00C6245E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84DBFB9125907CBE00C6245E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84DBFB9025907CBE00C6245E /* ThemeChage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84DBFB9225907CBE00C6245E /* ThemeChage */ = {
+			isa = PBXGroup;
+			children = (
+				840CBBEA259ABB5100B4597E /* Json */,
+				84DBFB9325907CBE00C6245E /* AppDelegate.h */,
+				84DBFB9425907CBE00C6245E /* AppDelegate.m */,
+				84DBFB9625907CBE00C6245E /* SceneDelegate.h */,
+				84DBFB9725907CBE00C6245E /* SceneDelegate.m */,
+				84DBFB9925907CBE00C6245E /* ViewController.h */,
+				84DBFB9A25907CBE00C6245E /* ViewController.m */,
+				840CBBF2259ACE0800B4597E /* FirstViewController.h */,
+				840CBBF3259ACE0800B4597E /* FirstViewController.m */,
+				84DBFB9C25907CBE00C6245E /* Main.storyboard */,
+				84DBFB9F25907CBF00C6245E /* Assets.xcassets */,
+				84DBFBA125907CBF00C6245E /* LaunchScreen.storyboard */,
+				84DBFBA425907CBF00C6245E /* Info.plist */,
+				84DBFBA525907CBF00C6245E /* main.m */,
+			);
+			path = ThemeChage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84DBFB8F25907CBE00C6245E /* ThemeChage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DBFBA925907CBF00C6245E /* Build configuration list for PBXNativeTarget "ThemeChage" */;
+			buildPhases = (
+				84DBFB8C25907CBE00C6245E /* Sources */,
+				84DBFB8D25907CBE00C6245E /* Frameworks */,
+				84DBFB8E25907CBE00C6245E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThemeChage;
+			productName = ThemeChage;
+			productReference = 84DBFB9025907CBE00C6245E /* ThemeChage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84DBFB8825907CBE00C6245E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = HJ;
+				TargetAttributes = {
+					84DBFB8F25907CBE00C6245E = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 84DBFB8B25907CBE00C6245E /* Build configuration list for PBXProject "ThemeChage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84DBFB8725907CBE00C6245E;
+			productRefGroup = 84DBFB9125907CBE00C6245E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84DBFB8F25907CBE00C6245E /* ThemeChage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84DBFB8E25907CBE00C6245E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DBFBA325907CBF00C6245E /* LaunchScreen.storyboard in Resources */,
+				84DBFBA025907CBF00C6245E /* Assets.xcassets in Resources */,
+				84DBFB9E25907CBE00C6245E /* Main.storyboard in Resources */,
+				840CBBEE259ABB5100B4597E /* Yellow.json in Resources */,
+				840CBBEF259ABB5100B4597E /* Light.json in Resources */,
+				840CBBF0259ABB5100B4597E /* Dark.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84DBFB8C25907CBE00C6245E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840CBBF4259ACE0800B4597E /* FirstViewController.m in Sources */,
+				84DBFB9B25907CBE00C6245E /* ViewController.m in Sources */,
+				840CBBE3259ABAF300B4597E /* NSObject+HJThemeObject.m in Sources */,
+				84DBFB9525907CBE00C6245E /* AppDelegate.m in Sources */,
+				840CBBE5259ABAF300B4597E /* NSObject+DeallocBlock.m in Sources */,
+				840CBBE1259ABAF300B4597E /* UIColor+HJFactory.m in Sources */,
+				84656A11259AFABA001113D2 /* UIViewController+HJTheme.m in Sources */,
+				840CBBE2259ABAF300B4597E /* UIView+HJThemeView.m in Sources */,
+				840CBBE4259ABAF300B4597E /* HJDeallocBlockExecutor.m in Sources */,
+				84DBFBA625907CBF00C6245E /* main.m in Sources */,
+				84DBFB9825907CBE00C6245E /* SceneDelegate.m in Sources */,
+				840CBBE8259ABB3400B4597E /* HJThemeManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84DBFB9C25907CBE00C6245E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84DBFB9D25907CBE00C6245E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84DBFBA125907CBF00C6245E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84DBFBA225907CBF00C6245E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84DBFBA725907CBF00C6245E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84DBFBA825907CBF00C6245E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84DBFBAA25907CBF00C6245E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThemeChage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cms.ThemeChage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		84DBFBAB25907CBF00C6245E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThemeChage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cms.ThemeChage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84DBFB8B25907CBE00C6245E /* Build configuration list for PBXProject "ThemeChage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DBFBA725907CBF00C6245E /* Debug */,
+				84DBFBA825907CBF00C6245E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DBFBA925907CBF00C6245E /* Build configuration list for PBXNativeTarget "ThemeChage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DBFBAA25907CBF00C6245E /* Debug */,
+				84DBFBAB25907CBF00C6245E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84DBFB8825907CBE00C6245E /* Project object */;
+}

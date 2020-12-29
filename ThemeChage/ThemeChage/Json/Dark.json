@@ -1,0 +1,38 @@
+{
+    "global":{
+        "image":"1",
+        "mainText":"EEEEEE",
+        "secondText":"BBBBBB",
+        "detailText":"999999",
+        "stockRise":"EF2323",
+        "stockFall":"17A129",
+        "stockSame":"E12121",
+        "stockRiseGradient":["4DEF2323","33171717"],
+        "stockFallGradient":["4D0BA12D","33171717"],
+        "stockSameGradient":["00FFFFFF","00FFFFFF"],
+        "linkText":"BC935C",
+        "mainButtonBackground":"E12121",
+        "secondButtonBorder":"EEEEEE",
+        "separateLine":"333333",
+        "background":"171717",
+        "secondBackground":"080808"
+    },
+    "selfStock":{
+        "shadowImgViewGradientBackground":["99080808","66171717"],
+        "clouldSyncSwitchViewBackground":"282828",
+        "marqueeOptionalEventViewBackground":"333333",
+        "bottomBar":"202020",
+        "selfSelectGroupDropContentView":{
+            "gridButtonBackground":"282828",
+            "gridButtonBackgroundSelected":"33E12121",
+            "gridButtonTextSelected":"EF2323",
+            "gridButtonText":"EEEEEE"
+
+        },
+        "selfIndexSelect": {
+            "cellBackground":"242424",
+            "cellTextSelected":"666666",
+            "cellText":"EEEEEE",
+        }
+    }
+}
