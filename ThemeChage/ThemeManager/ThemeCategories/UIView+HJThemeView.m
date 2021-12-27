@@ -186,6 +186,34 @@
     }
 }
 
+- (void)hj_themeUpdateMethod:(NSNotification *)noti {
+    __block NSString *themeStyle = noti.object;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [self.themes enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull selector, id obj, BOOL * _Nonnull stop) {
+            SEL sel = NSSelectorFromString(selector);
+            NSArray *datas = (NSArray *)obj;
+            if (themeStyle == nil || themeStyle.length == 0) {
+                themeStyle = datas.lastObject;
+            }
+            if ([selector containsString:@"Color"]) {
+                [[HJThemeManager sharedInstance] hj_getColorWithKeyPath:datas.firstObject themeStyle:themeStyle  colorCallBack:^(UIColor * _Nonnull color) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self performSelectorOnMainThread:sel withObject:color waitUntilDone:YES];
+                    });
+                }];
+            }
+            else {
+                [[HJThemeManager sharedInstance] hj_getImageWithKeyPath:datas.firstObject themeStyle:themeStyle  imageCallBack:^(UIImage * _Nonnull image) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+//                        [self performSelector:sel withObject:image];
+                        [self performSelectorOnMainThread:sel withObject:image waitUntilDone:YES];
+                    });
+                }];
+            }
+        }];
+    });
+}
+
 @end
 
 @implementation UITextView (HJThemeTextView)
@@ -197,6 +225,33 @@
     }
 }
 
+- (void)hj_themeUpdateMethod:(NSNotification *)noti {
+    __block NSString *themeStyle = noti.object;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [self.themes enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull selector, id obj, BOOL * _Nonnull stop) {
+            SEL sel = NSSelectorFromString(selector);
+            NSArray *datas = (NSArray *)obj;
+            if (themeStyle == nil || themeStyle.length == 0) {
+                themeStyle = datas.lastObject;
+            }
+            if ([selector containsString:@"Color"]) {
+                [[HJThemeManager sharedInstance] hj_getColorWithKeyPath:datas.firstObject themeStyle:themeStyle  colorCallBack:^(UIColor * _Nonnull color) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self performSelectorOnMainThread:sel withObject:color waitUntilDone:YES];
+                    });
+                }];
+            }
+            else {
+                [[HJThemeManager sharedInstance] hj_getImageWithKeyPath:datas.firstObject themeStyle:themeStyle  imageCallBack:^(UIImage * _Nonnull image) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+//                        [self performSelector:sel withObject:image];
+                        [self performSelectorOnMainThread:sel withObject:image waitUntilDone:YES];
+                    });
+                }];
+            }
+        }];
+    });
+}
 @end
 
 @implementation UIImageView (HJThemeImageView)
@@ -360,6 +415,34 @@
     }
 }
 
+- (void)hj_themeUpdateMethod:(NSNotification *)noti {
+    __block NSString *themeStyle = noti.object;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [self.themes enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull selector, id obj, BOOL * _Nonnull stop) {
+            SEL sel = NSSelectorFromString(selector);
+            NSArray *datas = (NSArray *)obj;
+            if (themeStyle == nil || themeStyle.length == 0) {
+                themeStyle = datas.lastObject;
+            }
+            if ([selector containsString:@"Color"]) {
+                [[HJThemeManager sharedInstance] hj_getColorWithKeyPath:datas.firstObject themeStyle:themeStyle  colorCallBack:^(UIColor * _Nonnull color) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self performSelectorOnMainThread:sel withObject:color waitUntilDone:YES];
+                    });
+                }];
+            }
+            else {
+                [[HJThemeManager sharedInstance] hj_getImageWithKeyPath:datas.firstObject themeStyle:themeStyle  imageCallBack:^(UIImage * _Nonnull image) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+//                        [self performSelector:sel withObject:image];
+                        [self performSelectorOnMainThread:sel withObject:image waitUntilDone:YES];
+                    });
+                }];
+            }
+        }];
+    });
+}
+
 @end
 
 
@@ -457,6 +540,34 @@
     if(hj_themeMinimumTrackTintColor.length > 0) {
         [self hj_setThemeColorWithIvarName:@"hj_themeMinimumTrackTintColor" colorPath:hj_themeMinimumTrackTintColor];
     }
+}
+
+- (void)hj_themeUpdateMethod:(NSNotification *)noti {
+    __block NSString *themeStyle = noti.object;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [self.themes enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull selector, id obj, BOOL * _Nonnull stop) {
+            SEL sel = NSSelectorFromString(selector);
+            NSArray *datas = (NSArray *)obj;
+            if (themeStyle == nil || themeStyle.length == 0) {
+                themeStyle = datas.lastObject;
+            }
+            if ([selector containsString:@"Color"]) {
+                [[HJThemeManager sharedInstance] hj_getColorWithKeyPath:datas.firstObject themeStyle:themeStyle  colorCallBack:^(UIColor * _Nonnull color) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self performSelectorOnMainThread:sel withObject:color waitUntilDone:YES];
+                    });
+                }];
+            }
+            else {
+                [[HJThemeManager sharedInstance] hj_getImageWithKeyPath:datas.firstObject themeStyle:themeStyle  imageCallBack:^(UIImage * _Nonnull image) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+//                        [self performSelector:sel withObject:image];
+                        [self performSelectorOnMainThread:sel withObject:image waitUntilDone:YES];
+                    });
+                }];
+            }
+        }];
+    });
 }
 
 
@@ -694,6 +805,34 @@
     }
 }
 
+- (void)hj_themeUpdateMethod:(NSNotification *)noti {
+    __block NSString *themeStyle = noti.object;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [self.themes enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull selector, id obj, BOOL * _Nonnull stop) {
+            SEL sel = NSSelectorFromString(selector);
+            NSArray *datas = (NSArray *)obj;
+            if (themeStyle == nil || themeStyle.length == 0) {
+                themeStyle = datas.lastObject;
+            }
+            if ([selector containsString:@"Color"]) {
+                [[HJThemeManager sharedInstance] hj_getColorWithKeyPath:datas.firstObject themeStyle:themeStyle  colorCallBack:^(UIColor * _Nonnull color) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self performSelectorOnMainThread:sel withObject:color waitUntilDone:YES];
+                    });
+                }];
+            }
+            else {
+                [[HJThemeManager sharedInstance] hj_getImageWithKeyPath:datas.firstObject themeStyle:themeStyle  imageCallBack:^(UIImage * _Nonnull image) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+//                        [self performSelector:sel withObject:image];
+                        [self performSelectorOnMainThread:sel withObject:image waitUntilDone:YES];
+                    });
+                }];
+            }
+        }];
+    });
+}
+
 @end
 
 
@@ -709,6 +848,34 @@
     }
 }
 
+- (void)hj_themeUpdateMethod:(NSNotification *)noti {
+    __block NSString *themeStyle = noti.object;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [self.themes enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull selector, id obj, BOOL * _Nonnull stop) {
+            SEL sel = NSSelectorFromString(selector);
+            NSArray *datas = (NSArray *)obj;
+            if (themeStyle == nil || themeStyle.length == 0) {
+                themeStyle = datas.lastObject;
+            }
+            if ([selector containsString:@"Color"]) {
+                [[HJThemeManager sharedInstance] hj_getColorWithKeyPath:datas.firstObject themeStyle:themeStyle  colorCallBack:^(UIColor * _Nonnull color) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self performSelectorOnMainThread:sel withObject:color waitUntilDone:YES];
+                    });
+                }];
+            }
+            else {
+                [[HJThemeManager sharedInstance] hj_getImageWithKeyPath:datas.firstObject themeStyle:themeStyle  imageCallBack:^(UIImage * _Nonnull image) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+//                        [self performSelector:sel withObject:image];
+                        [self performSelectorOnMainThread:sel withObject:image waitUntilDone:YES];
+                    });
+                }];
+            }
+        }];
+    });
+}
+
 @end
 
 @implementation UINavigationBar (HJThemeNavigationBar)
@@ -718,6 +885,34 @@
     if (hj_themeBarTintColor.length > 0) {
         [self hj_setThemeColorWithIvarName:@"hj_themeBarTintColor" colorPath:hj_themeBarTintColor];
     }
+}
+
+- (void)hj_themeUpdateMethod:(NSNotification *)noti {
+    __block NSString *themeStyle = noti.object;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [self.themes enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull selector, id obj, BOOL * _Nonnull stop) {
+            SEL sel = NSSelectorFromString(selector);
+            NSArray *datas = (NSArray *)obj;
+            if (themeStyle == nil || themeStyle.length == 0) {
+                themeStyle = datas.lastObject;
+            }
+            if ([selector containsString:@"Color"]) {
+                [[HJThemeManager sharedInstance] hj_getColorWithKeyPath:datas.firstObject themeStyle:themeStyle  colorCallBack:^(UIColor * _Nonnull color) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self performSelectorOnMainThread:sel withObject:color waitUntilDone:YES];
+                    });
+                }];
+            }
+            else {
+                [[HJThemeManager sharedInstance] hj_getImageWithKeyPath:datas.firstObject themeStyle:themeStyle  imageCallBack:^(UIImage * _Nonnull image) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+//                        [self performSelector:sel withObject:image];
+                        [self performSelectorOnMainThread:sel withObject:image waitUntilDone:YES];
+                    });
+                }];
+            }
+        }];
+    });
 }
 
 @end

@@ -39,38 +39,12 @@ static void *HJViewDeallocHelperKey;
         
         [[NSNotificationCenter defaultCenter] removeObserver:self name:HJ_ThemeUpdateNotification object:nil];
 
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(HJ_themeUpdateMethod:) name:HJ_ThemeUpdateNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hj_themeUpdateMethod:) name:HJ_ThemeUpdateNotification object:nil];
     }
     return themes;
 }
 
-- (void)HJ_themeUpdateMethod:(NSNotification *)noti {
-    __block NSString *themeStyle = noti.object;
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        [self.themes enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull selector, id obj, BOOL * _Nonnull stop) {
-            SEL sel = NSSelectorFromString(selector);
-            NSArray *datas = (NSArray *)obj;
-            if (themeStyle == nil || themeStyle.length == 0) {
-                themeStyle = datas.lastObject;
-            }
-            if ([selector containsString:@"Color"]) {
-                [[HJThemeManager sharedInstance] hj_getColorWithKeyPath:datas.firstObject themeStyle:themeStyle  colorCallBack:^(UIColor * _Nonnull color) {
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        [self performSelectorOnMainThread:sel withObject:color waitUntilDone:YES];
-                    });
-                }];
-            }
-            else {
-                [[HJThemeManager sharedInstance] hj_getImageWithKeyPath:datas.firstObject themeStyle:themeStyle  imageCallBack:^(UIImage * _Nonnull image) {
-                    dispatch_async(dispatch_get_main_queue(), ^{
-//                        [self performSelector:sel withObject:image];
-                        [self performSelectorOnMainThread:sel withObject:image waitUntilDone:YES];
-                    });
-                }];
-            }
-        }];
-    });
-}
+
 
 @end
 
